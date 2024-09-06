@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Favicon for the website -->
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Responsive viewport settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Swiper CSS for sliders/carousels -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Vite App</title>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./assets/images/clove logo.png" alt="Clove Dental Logo">
+      </div>
+      
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#">Treatments <i class="fas fa-caret-down"></i></a></li>
+        <li><a href="#">Dental Plans <i class="fas fa-caret-down"></i></a></li>
+        <li><a href="#">Our Doctors</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Find a Clinic</a></li>
+      </ul>
+      
+      <!-- Right Side of Navbar -->
+      <div class="nav-right">
+        <!-- Appointment Button -->
+        <button class="appointment-btn">
+          <img src="./assets/images/Book an appointment.png" alt="Book Appointment"> Book Appointment
+        </button>
+        
+        <!-- Help Button -->
+        <div class="help">
+          <button class="help-btn">
+            <img src="./assets/images/Get a Call Back.png" alt="Get a Call Back"> Help? 
+            <img src="./assets/images/Vector (1).png" alt="Dropdown Icon">
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Slider Section -->
+    <section class="slider">
+      <!-- First Slide -->
+      <div class="slide1">
+        <!-- Left Side of Slide (Text Content) -->
+        <div class="left">
+          <h1>Advance Dental Health Plan</h1>
+          <h3>Dental care worth ₹8000/-</h3>
+          <h2>only at ₹550/-</h2>
+          <button>Buy Now</button>
+        </div>
+        
+        <!-- Right Side of Slide (Image) -->
+        <div class="right">
+          <img src="./assets/images/slider-1-img.png" alt="Dental Care Image">
+        </div>
+      </div>
+      
+      <!-- Second Slide Placeholder (Empty) -->
+      <div class="slide2"><img src="" alt=""></div>
+    </section>
+
+    <!-- Clinic Information Section -->
+    <section class="clinic-section">
+      <!-- Left Side (Clinic Stats) -->
+      <div class="clinic-left">
+        <h1><span class="highlight">450+</span> World Class Clinics</h1>
+        <p>Manned by 1200+ Super Specialists</p>
+      </div>
+      
+      <!-- Right Side (Ratings and Location Selector) -->
+      <div class="clinic-right">
+        <!-- Google Rating Display -->
+        <div class="google-rating">
+          <img src="./assets/images/google.png" alt="Google Rating">
+          <div class="rating">
+            <h2>4.9/5</h2>
+            <p>1.5 Lakh+<br>5 Star Ratings</p>
+          </div>
+        </div>
+        
+        <!-- City Dropdown and Locate Button -->
+        <div class="city-dropdown">
+          <select name="cities" id="city-selector">
+            <option value="">Select your City</option>
+            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Amritsar">Amritsar</option>
+            <option value="bengaluru">Bengaluru</option>
+            <option value="chandigarh">Chandigarh</option>
+            <option value="chennai">Chennai</option>
+            <option value="delhi">Delhi</option>
+            <option value="faridabad">Faridabad</option>
+            <option value="ghaziabad">Ghaziabad</option>
+            <option value="Greater-noida">Greater-noida</option>
+            <option value="gurgaon">Gurgaon</option>
+            <option value="Hydrabad">Hydrabad</option>
+            <option value="Jaipur">Jaipur</option>
+          </select>
+          <button class="clinic-btn">
+            Locate Nearest Clove Clinic
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Treatment Section -->
+    <section class="treatment-section">
+      <div class="container">
+        <!-- Section Headings -->
+        <h2>All dental issues from simple cleaning</h2>
+        <h2> to full mouth rehabilitation under one roof</h2>
+        
+        <!-- Treatments Grid -->
+        <div class="treatment-grid">
+          <!-- Individual Treatment Card -->
+          <div class="treatment-card">
+            <img src="./assets/svg/Root canal.svg" alt="Root Canal">
+            <p>Root Canal Treatment</p>
+          </div>
+          
+          <!-- Repeat for other treatments -->
+          <div class="treatment-card">
+            <img src="./assets/svg/Group 51325.svg" alt="Braces">
+            <p>Braces</p>
+          </div>
+          <div class="treatment-card">
+            <img src="./assets/svg/Frame 52318.svg" alt="Teeth Whitening">
+            <p>Teeth Whitening</p>
+          </div>
+          <div class="treatment-card">
+            <img src="./assets/svg/Layer 2.svg" alt="Invisible Braces">
+            <p>Invisible Braces</p>
+          </div>
+          <div class="treatment-card">
+            <img src="./assets/svg/Implant.svg" alt="Dental Implants">
+            <p>Dental Implants</p>
+          </div>
+          <div class="treatment-card">
+            <img src="./assets/svg/Smile makeover.svg" alt="Smile Makeover">
+            <p>Smile Makeover</p>
+          </div>
+          <div class="treatment-card">
+            <img src="./assets/svg/Frame 52033.svg" alt="Kids Dentistry">
+            <p>Kids Dentistry</p>
+          </div>
+          <div class="treatment-card">
+            <img src="assets/svg/Layer 2-1.svg" alt="Gum Treatment">
+            <p>Gum Treatment</p>
+          </div>
+          <div class="treatment-card">
+            <img src="./assets/svg/Frame 52047.svg" alt="Wisdom Tooth">
+            <p>Wisdom Tooth</p>
+          </div>
+          <div class="treatment-card">
+            <img src="./assets/svg/Laser.svg" alt="Laser/Painless Dentistry">
+            <p>Laser/Painless Dentistry</p>
+          </div>
+          <div class="treatment-card">
+            <img src="./assets/svg/Frame 52030.svg" alt="Crowns & Bridges">
+            <p>Crowns & Bridges</p>
+          </div>
+          <div class="treatment-card">
+            <img src="./assets/svg/Frame 52020.svg" alt="Dentures">
+            <p>Dentures</p>
+          </div>
+        </div>
+        
+        <!-- Explore Treatments Link -->
+        <a href="#" class="explore-link">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>Explore Treatments</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Guidance Section -->
+    <section class="guidance-section">
+      <div class="g-container">
+        <!-- Guidance Form -->
+        <div class="guidance-form">
+          <!-- Form Heading -->
+          <div class="txt">
+            <h2>Expert Guidance for Healthy Smiles</h2>
+            <p>Contact Now</p>
+          </div>
+
+          <!-- Contact Form -->
+          <form>
+            <input type="text" placeholder="Name" value="Amit Rana">
+            <input type="tel" placeholder="Mobile Number">
+            <select>
+              <option>Select Concern</option>
+              <option>Dental Issue 1</option>
+              <option>Dental Issue 2</option>
+            </select>
+            <button type="submit">Book A Free Consultation</button>
+          </form>
+        </div>
+        
+        <!-- Guidance Information -->
+        <div class="guidance-info">
+          <!-- Safety Protocols Section -->
+          <div class="safety-protocols">
+            <!-- Left Side (Text) -->
+            <div class="s-left">
+              <div class="top1">
+                <h3>10x Safety Protocols</h3>
+                <p>Monitored by DORI </p>
+                <p>(Artificial Intelligence System)</p>
+              </div>
+              <div class="down1">
+                <a href="#">Learn More <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- Right Side (Image) -->
+            <div class="s-right">
+              <img src="./assets//images/doctor.png" alt="Doctor">
+            </div>
+          </div>
+          
+          <!-- Neighbourhood Information Section -->
+          <div class="neighbourhood-info">
+            <!-- Individual Info Card -->
+            <div class="info-card">
+              <p>450+ Neighbourhood</p>
+              <span>Clinics Pan India</span>
+              <img src="./assets/images/Clinics.png" alt="Clinic">
+              <a href="#">Locate Clinic near you <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            
+            <div class="info-card">
+              <p>1200+ Expert Doctors</p>
+              <span>Covering All Specialities</span>
+              <img src="./assets/images/Group 51324.png" alt="Doctors">
+              <a href="#">Explore Dentists Nearby <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+      <h2>In their Own Words</h2>
+      <!-- Swiper Container for Testimonials -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper own-word">
+          <!-- Individual Testimonial Slide -->
+          <div class="swiper-slide">
+            <img src="./assets/images/punjabi.png" alt="Shubham Braces">
+            <p>Shubham</p>
+            <span>Braces</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/curlyhar.png" alt="Shubham Braces">
+            <p>Shubham</p>
+            <span>Braces</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/saree.png" alt="Shubham Braces">
+            <p>Shubham</p>
+            <span>Braces</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/yellow shirt.png" alt="Shubham Braces">
+            <p>Shubham</p>
+            <span>Braces</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets//images/white kurti.png" alt="Shubham Braces">
+            <p>Shubham</p>
+            <span>Braces</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dental Excellence Section -->
+    <section class="dental-excellence-section">
+      <!-- Dental Information -->
+      <div class="dental-info">
+        <h2>Unmatched Dental Excellence by 1200+ Specialists</h2>
+        
+        <!-- Side Images with Statistics -->
+        <div class="side-img">
+          <img src="./assets/images/Frame 52485.png" alt="Specialists">
+          <h3>Team of Specialists: <br><span>75%</span> Orthodontists </h3>
+        </div>
+        <div class="side-img">
+          <img src="./assets/images/Frame 52484.png" alt="Women in Team">
+          <h3>Leading with: <br><span>80%</span> Women</h3>
+        </div>
+        <div class="side-img">
+          <img src="./assets/images/Frame 2609439.png" alt="MDS Doctors">
+          <h3><span>65%</span> MDS: <br> Doctors for Specialized Care </h3>
+        </div>
+      </div>
+
+      <!-- Doctor Slider -->
+      <div class="doctor-slider-container">
+        <div class="doctor-slider-wrapper">
+          <!-- Individual Doctor Slide -->
+          <div class="doctor-slider-slide">
+            <img src="./assets/images/slide2.png" alt="Dr. Suresh Kumar">
+            <h3>Dr. Suresh Kumar</h3>
+            <p>18+ Years Experience</p>
+          </div>
+          <div class="doctor-slider-slide">
+            <img src="./assets/images/slide3.png" alt="Dr. Rajni Mary">
+            <h3>Dr. Rajni Mary</h3>
+            <p>10+ Years Experience</p>
+          </div>
+          <div class="doctor-slider-slide">
+            <img src="./assets/images/slide1.png" alt="Dr. Shushma Reddy">
+            <h3>Dr. Shushma Reddy</h3>
+            <p>20+ Years Experience</p>
+          </div>
+        </div>
+        <!-- Button to Meet Doctors -->
+        <button class="meet-doctors-btn">Meet our Doctors</button>
+      </div>
+    </section>
+    
+    <!-- Scrollable Stats Section -->
+    <div class="scroll-container">
+      <div class="scroll-content">
+        <!-- Individual Stat Item -->
+        <div class="item">
+          <img src="./assets/images/Happy Patients.png" alt="Happy Patients">20 L+ Happy Patients
+        </div>
+        <div class="item">
+          <img src="./assets/images/doctor copy.png" alt="Dentists">1200+ Dentists
+        </div>
+        <div class="item">
+          <img src="./assets/images/Clinics copy.png" alt="Clinics">450+ Clinics
+        </div>
+        <div class="item">
+          <img src="./assets/images/calender.png" alt="Open Days">7 Days Open
+        </div>
+        
+        <!-- Repeating Stat Items for Scroll Effect -->
+        <div class="item">
+          <img src="./assets/images/Happy Patients.png" alt="Happy Patients">20 L+ Happy Patients
+        </div>
+        <div class="item">
+          <img src="./assets/images/doctor copy.png" alt="Dentists">1200+ Dentists
+        </div>
+        <div class="item">
+          <img src="./assets/images/Clinics copy.png" alt="Clinics">450+ Clinics
+        </div>
+        <div class="item">
+          <img src="./assets/images/calender.png" alt="Open Days">7 Days Open
+        </div>
+        
+        <div class="item">
+          <img src="./assets/images/Happy Patients.png" alt="Happy Patients">20 L+ Happy Patients
+        </div>
+        <div class="item">
+          <img src="./assets/images/doctor copy.png" alt="Dentists">1200+ Dentists
+        </div>
+        <div class="item">
+          <img src="./assets/images/Clinics copy.png" alt="Clinics">450+ Clinics
+        </div>
+        <div class="item">
+          <img src="./assets/images/calender.png" alt="Open Days">7 Days Open
+        </div>
+        
+        <div class="item">
+          <img src="./assets/images/Happy Patients.png" alt="Happy Patients">20 L+ Happy Patients
+        </div>
+        <div class="item">
+          <img src="./assets/images/doctor copy.png" alt="Dentists">1200+ Dentists
+        </div>
+        <div class="item">
+          <img src="./assets/images/Clinics copy.png" alt="Clinics">450+ Clinics
+        </div>
+        <div class="item">
+          <img src="./assets/images/calender.png" alt="Open Days">7 Days Open
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Slider Section -->
+    <section class="main-slider">
+      <div class="main-slider-wrapper">
+        <!-- Individual Main Slide -->
+        <div class="main-slide2">
+          <img src="./assets/images/Frame 52446 (1).png" alt="Main Slider Image 1">
+        </div>
+        <div class="main-slide2">
+          <img src="./assets/images/Frame 52446 (1).png" alt="Main Slider Image 2">
+        </div>
+        <div class="main-slide2">
+          <img src="./assets/images/Frame 52446 (1).png" alt="Main Slider Image 3">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section class="blog">
+      <div class="blog-wrapper">
+        <!-- Blog Heading -->
+        <h3 class="blog-heading">Journey Through Knowledge : Blog Hub</h3>
+        
+        <!-- Blog Categories -->
+        <ul>
+          <li class="active">General Destiny</li>
+          <li>cosmetic Destiny</li>
+          <li>Crowns & Bridges</li>
+          <li>Nutrition</li>
+          <li>Oral Surgery</li>
+          <li>Root canal</li>
+          <li>Implant & Dentures</li>
+        </ul>
+        
+        <!-- Blog List -->
+        <div class="blog-list">
+          <!-- Individual Blog Container -->
+          <div class="blog-container">
+            <div class="blog-img">
+              <img src="./assets/images/blog-img.png" alt="Blog Image">
+            </div>
+            <div class="blog-text">
+              <h3>Dry Socket Demystified: <br>Understanding the connection <br> to tooth Extraction</h3>
+              <p>12th Feb 2024 | 2 min read</p>
+            </div>
+          </div>
+          
+          <!-- Repeat for other blog posts -->
+          <div class="blog-container">
+            <div class="blog-img">
+              <img src="./assets/images/blog-img.png" alt="Blog Image">
+            </div>
+            <div class="blog-text">
+              <h3>Dry Socket Demystified: <br>Understanding the connection <br> to tooth Extraction</h3>
+              <p>12th Feb 2024 | 2 min read</p>
+            </div>
+          </div>
+          <div class="blog-container">
+            <div class="blog-img">
+              <img src="./assets/images/blog-img.png" alt="Blog Image">
+            </div>
+            <div class="blog-text">
+              <h3>Dry Socket Demystified: <br>Understanding the connection <br> to tooth Extraction</h3>
+              <p>12th Feb 2024 | 2 min read</p>
+            </div>
+          </div>
+          <div class="blog-container">
+            <div class="blog-img">
+              <img src="./assets/images/blog-img.png" alt="Blog Image">
+            </div>
+            <div class="blog-text">
+              <h3>Dry Socket Demystified: <br>Understanding the connection <br> to tooth Extraction</h3>
+              <p>12th Feb 2024 | 2 min read</p>
+            </div>
+          </div>
+          <div class="blog-container">
+            <div class="blog-img">
+              <img src="./assets/images/blog-img.png" alt="Blog Image">
+            </div>
+            <div class="blog-text">
+              <h3>Dry Socket Demystified: <br>Understanding the connection <br> to tooth Extraction</h3>
+              <p>12th Feb 2024 | 2 min read</p>
+            </div>
+          </div>
+          <div class="blog-container">
+            <div class="blog-img">
+              <img src="./assets/images/blog-img.png" alt="Blog Image">
+            </div>
+            <div class="blog-text">
+              <h3>Dry Socket Demystified: <br>Understanding the connection <br> to tooth Extraction</h3>
+              <p>12th Feb 2024 | 2 min read</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Explore More Blogs Link -->
+        <div class="blog-link">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">Explore More</a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust">
+      <div class="trust-wrapper">
+        <!-- Top Part (Handshake Image) -->
+        <div class="trust-top">
+          <img src="./assets/images/shake hand.png" alt="Handshake">
+        </div>
+        
+        <!-- Bottom Part (Corporate Trust and Brands) -->
+        <div class="trust-bottom">
+          <!-- Corporate Trust Stats -->
+          <div class="stats">
+            <h1>250+</h1>
+            <h3> Corporate Trust Us</h3>
+            <p>Check if Your company is one of them & avail exclusive benefits</p>
+          </div>
+          
+          <!-- Brand Logos -->
+          <div class="brand-logos">
+            <img src="./assets/images/Bata.png" alt="Bata">
+            <img src="./assets/images/taj.png" alt="Taj">
+            <img src="./assets/images/vardhman.png" alt="Vardhman">
+            <img src="./assets/images/lakme.png" alt="Lakme">
+            <img src="./assets/images/marsh.png" alt="Marsh">
+          </div>
+          
+          <!-- Appointment Button -->
+          <button>
+            Book Appointment
+          </button>
+          
+          <!-- Register Your Company Link -->
+          <div class="link">
+            <a href="#">Register your Company</a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Section -->
+    <section class="success">
+      <div class="success-wrapper">
+        <!-- Text Area with Headings -->
+        <div class="text-area">
+          <h2>Beyond Destiny</h2>
+          <h3>Mapping success in Every Area</h3>
+        </div>
+        
+        <!-- Success Information Boxes -->
+        <div class="success-info">
+          <!-- Individual Success Box -->
+          <div class="success-area">
+            <img src="./assets/images/hat (1).png" alt="Hat Icon">
+            <h4>Educational Videos</h4>
+          </div>
+          
+          <!-- Repeat for other success areas -->
+          <div class="success-area">
+            <img src="./assets/images/paper (2).png" alt="Paper Icon">
+            <h4>Educational Videos</h4>
+          </div>
+          <div class="success-area">
+            <img src="./assets/images/cup.png" alt="Cup Icon">
+            <h4>Educational Videos</h4>
+          </div>
+          <div class="success-area">
+            <img src="./assets/images/hat (4).png" alt="Hat Icon">
+            <h4>Educational Videos</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="question">
+      <div class="question-wrapper">
+        <!-- FAQ Heading -->
+        <div class="heading">
+          <h1>Frequently Asked Questions</h1>
+        </div>
+        
+        <!-- List of Questions -->
+        <div class="question-list">
+          <!-- Individual Question Container -->
+          <div class="question-container">
+            <p>Can I choose the dentist on my own for <br> treatment?</p>
+            <div class="plus-icon">+</div>
+          </div>
+          <div class="question-container">
+            <p>Can I choose the dentist on my own for <br> treatment?</p>
+            <div class="plus-icon">+</div>
+          </div>
+          <div class="question-container">
+            <p>Can I choose the dentist on my own for <br> treatment?</p>
+            <div class="plus-icon">+</div>
+          </div>
+          <div class="question-container">
+            <p>Can I choose the dentist on my own for <br> treatment?</p>
+            <div class="plus-icon">+</div>
+          </div>
+          <div class="question-container">
+            <p>Can I choose the dentist on my own for <br> treatment?</p>
+            <div class="plus-icon">+</div>
+          </div>
+          <div class="question-container">
+            <p>Can I choose the dentist on my own for <br> treatment?</p>
+            <div class="plus-icon">+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-wrapper">
+        <!-- Top Part of Footer (Links and Information) -->
+        <div class="top">
+          <!-- Treatments Links -->
+          <div class="Treatment">
+            <h3>Treatments</h3>
+            <ul>
+              <li>Laser Dentistry</li>
+              <li>Dental Fillings</li>
+              <li>Root Canal Treatment</li>
+              <li>Wisdom Teeth Removal</li>
+              <li>Braces & Aligners</li>
+              <li>Clear Aligners</li>
+              <li>Dental Implants</li>
+            </ul>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="Quick-Links">
+            <h3>Quick-Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Book Appointments</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <!-- Explore Clove Links -->
+          <div class="Explore-clove">
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Clinic Overview</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+          
+          <!-- Legal Links -->
+          <div class="legal">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="Connect-with-us">
+            <h3>Connect with us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Middle Part of Footer (Logo) -->
+        <div class="middle">
+          <div class="footer-logo">
+            <img src="./assets/images/clove logo (1).png" alt="Clove Dental Logo">
+          </div>
+        </div>
+        
+        <!-- Bottom Part of Footer (Copyright) -->
+        <div class="low">
+          <p>All Rights Reserved - 2024, Clove Dental (a brand name of M/s. Star Dental Centre Private Limited)</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Swiper JS for sliders/carousels -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- Main JavaScript File -->
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
