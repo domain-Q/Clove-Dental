@@ -1399,7 +1399,7 @@ footer {
     padding: 20px 15px;
   }
 
-  .clinic-section{
+  .clinic-section {
     gap: 10px;
     padding: 36px 4px;
   }
@@ -1421,85 +1421,101 @@ footer {
     p {
       font-size: 14px;
     }
-    select{
-      
+    select {
     }
-    button{
+    button {
       padding: 20px 10px;
       font-size: 14px;
     }
   }
   /* Mobile Menu Styles */
-.mobile-menu {
-  display: none; /* Hidden by default */
-  position: absolute;
-  top: 60px; /* Adjust based on the height of your header */
-  left: 0;
-  width: 100%;
-  background-color: #f3f3f3;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 999; /* Ensures it stays on top */
-}
+  .mobile-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px; /* Adjust based on the height of your header */
+    left: 0;
+    width: 100%;
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensures it stays on top */
+  }
 
-.mobile-nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+  .mobile-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-.mobile-nav-links li {
-  border-bottom: 1px solid #e0e0e0;
-}
+  .mobile-nav-links li {
+    border-bottom: 1px solid #e0e0e0;
+  }
 
-.mobile-nav-links li:last-child {
-  border-bottom: none; /* Remove bottom border for the last item */
-}
+  .mobile-nav-links li:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+  }
 
-.mobile-nav-links li a {
-  display: block;
-  padding: 15px 20px;
-  color: #333;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  .mobile-nav-links li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-.mobile-nav-links li a:hover {
-  background-color: #007bff;
-  color: #fff;
-}
+  .mobile-nav-links li a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
 
-.mobile-nav-links li a i {
-  margin-left: 10px;
-}
+  .mobile-nav-links li a i {
+    margin-left: 10px;
+  }
 
-.mobile-nav-links li a:active {
-  background-color: #0056b3;
-  color: #fff;
-}
+  .mobile-nav-links li a:active {
+    background-color: #0056b3;
+    color: #fff;
+  }
 
-/* Toggle Menu Button for Mobile */
-.hamburger {
-  display: block;
-  cursor: pointer;
-}
+  /* Toggle Menu Button for Mobile */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 
-.hamburger div {
-  width: 30px;
-  height: 3px;
-  background-color: #333;
-  margin: 5px 0;
-  transition: all 0.3s ease;
-}
+  .hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
 
-/* Mobile Menu Active State */
-.mobile-menu-active .mobile-menu {
-  display: block;
-  animation: slideIn 0.3s ease forwards;
-}
+  /* Mobile Menu Active State */
+  .mobile-menu-active .mobile-menu {
+    display: block;
+    animation: slideIn 0.3s ease forwards;
+  }
+  .own-word .swiper-slide img {
+    height: auto;
+  }
+  .swiper-container {
+    height: auto;
+    width: 70%;
+    padding: 50px 0 0 0;
+  }
 
 
+  .swiper-slide {
+    padding: 2px;
+    p {
+      font-size: 0.6rem;
+    }
+    span{
+      font-size: 0.5rem;
+    }
+  }
 }
 
 @keyframes slideIn {
