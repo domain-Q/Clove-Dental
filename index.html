@@ -31,6 +31,9 @@
       <div class="logo">
         <img src="./assets/images/clove logo.png" alt="Clove Dental Logo">
       </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
       
       <!-- Navigation Links -->
       <ul class="nav-links">
@@ -43,21 +46,35 @@
       
       <!-- Right Side of Navbar -->
       <div class="nav-right">
-        <!-- Appointment Button -->
         <button class="appointment-btn">
           <img src="./assets/images/Book an appointment.png" alt="Book Appointment"> Book Appointment
         </button>
         
-        <!-- Help Button -->
         <div class="help">
           <button class="help-btn">
             <img src="./assets/images/Get a Call Back.png" alt="Get a Call Back"> Help? 
             <img src="./assets/images/Vector (1).png" alt="Dropdown Icon">
           </button>
         </div>
+        
+        <!-- Hamburger Menu -->
+        
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+          <li><a href="#">Treatments <i class="fas fa-caret-down"></i></a></li>
+          <li><a href="#">Dental Plans <i class="fas fa-caret-down"></i></a></li>
+          <li><a href="#">Our Doctors</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Find a Clinic</a></li>
+        </ul>
       </div>
     </nav>
   </header>
+  
+  
 
   <!-- Main Content -->
   <main>
@@ -127,75 +144,75 @@
     </section>
 
     <!-- Treatment Section -->
-    <section class="treatment-section">
-      <div class="container">
-        <!-- Section Headings -->
-        <h2>All dental issues from simple cleaning</h2>
-        <h2> to full mouth rehabilitation under one roof</h2>
-        
-        <!-- Treatments Grid -->
-        <div class="treatment-grid">
-          <!-- Individual Treatment Card -->
-          <div class="treatment-card">
-            <img src="./assets/svg/Root canal.svg" alt="Root Canal">
-            <p>Root Canal Treatment</p>
+      <section class="treatment-section">
+        <div class="container">
+          <!-- Section Headings -->
+          <h2>All dental issues from simple cleaning</h2>
+          <h2> to full mouth rehabilitation under one roof</h2>
+          
+          <!-- Treatments Grid -->
+          <div class="treatment-grid">
+            <!-- Individual Treatment Card -->
+            <div class="treatment-card">
+              <img src="./assets/svg/Root canal.svg" alt="Root Canal">
+              <p>Root Canal Treatment</p>
+            </div>
+            
+            <!-- Repeat for other treatments -->
+            <div class="treatment-card">
+              <img src="./assets/svg/Group 51325.svg" alt="Braces">
+              <p>Braces</p>
+            </div>
+            <div class="treatment-card">
+              <img src="./assets/svg/Frame 52318.svg" alt="Teeth Whitening">
+              <p>Teeth Whitening</p>
+            </div>
+            <div class="treatment-card">
+              <img src="./assets/svg/Layer 2.svg" alt="Invisible Braces">
+              <p>Invisible Braces</p>
+            </div>
+            <div class="treatment-card">
+              <img src="./assets/svg/Implant.svg" alt="Dental Implants">
+              <p>Dental Implants</p>
+            </div>
+            <div class="treatment-card">
+              <img src="./assets/svg/Smile makeover.svg" alt="Smile Makeover">
+              <p>Smile Makeover</p>
+            </div>
+            <div class="treatment-card">
+              <img src="./assets/svg/Frame 52033.svg" alt="Kids Dentistry">
+              <p>Kids Dentistry</p>
+            </div>
+            <div class="treatment-card">
+              <img src="assets/svg/Layer 2-1.svg" alt="Gum Treatment">
+              <p>Gum Treatment</p>
+            </div>
+            <div class="treatment-card">
+              <img src="./assets/svg/Frame 52047.svg" alt="Wisdom Tooth">
+              <p>Wisdom Tooth</p>
+            </div>
+            <div class="treatment-card">
+              <img src="./assets/svg/Laser.svg" alt="Laser/Painless Dentistry">
+              <p>Laser/Painless Dentistry</p>
+            </div>
+            <div class="treatment-card">
+              <img src="./assets/svg/Frame 52030.svg" alt="Crowns & Bridges">
+              <p>Crowns & Bridges</p>
+            </div>
+            <div class="treatment-card">
+              <img src="./assets/svg/Frame 52020.svg" alt="Dentures">
+              <p>Dentures</p>
+            </div>
           </div>
           
-          <!-- Repeat for other treatments -->
-          <div class="treatment-card">
-            <img src="./assets/svg/Group 51325.svg" alt="Braces">
-            <p>Braces</p>
-          </div>
-          <div class="treatment-card">
-            <img src="./assets/svg/Frame 52318.svg" alt="Teeth Whitening">
-            <p>Teeth Whitening</p>
-          </div>
-          <div class="treatment-card">
-            <img src="./assets/svg/Layer 2.svg" alt="Invisible Braces">
-            <p>Invisible Braces</p>
-          </div>
-          <div class="treatment-card">
-            <img src="./assets/svg/Implant.svg" alt="Dental Implants">
-            <p>Dental Implants</p>
-          </div>
-          <div class="treatment-card">
-            <img src="./assets/svg/Smile makeover.svg" alt="Smile Makeover">
-            <p>Smile Makeover</p>
-          </div>
-          <div class="treatment-card">
-            <img src="./assets/svg/Frame 52033.svg" alt="Kids Dentistry">
-            <p>Kids Dentistry</p>
-          </div>
-          <div class="treatment-card">
-            <img src="assets/svg/Layer 2-1.svg" alt="Gum Treatment">
-            <p>Gum Treatment</p>
-          </div>
-          <div class="treatment-card">
-            <img src="./assets/svg/Frame 52047.svg" alt="Wisdom Tooth">
-            <p>Wisdom Tooth</p>
-          </div>
-          <div class="treatment-card">
-            <img src="./assets/svg/Laser.svg" alt="Laser/Painless Dentistry">
-            <p>Laser/Painless Dentistry</p>
-          </div>
-          <div class="treatment-card">
-            <img src="./assets/svg/Frame 52030.svg" alt="Crowns & Bridges">
-            <p>Crowns & Bridges</p>
-          </div>
-          <div class="treatment-card">
-            <img src="./assets/svg/Frame 52020.svg" alt="Dentures">
-            <p>Dentures</p>
-          </div>
+          <!-- Explore Treatments Link -->
+          <a href="#" class="explore-link">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Explore Treatments</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
-        
-        <!-- Explore Treatments Link -->
-        <a href="#" class="explore-link">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <span>Explore Treatments</span>
-          <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-    </section>
+      </section>
 
     <!-- Guidance Section -->
     <section class="guidance-section">
