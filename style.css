@@ -286,8 +286,8 @@ header {
 .slider {
   display: flex;
   background: #b5c1a6;
-
-  height: 80vh;
+ max-width: 1400px;
+  height: 90vh;
 }
 .slide1 {
   height: 100%;
@@ -297,7 +297,7 @@ header {
   width: 100%;
 
   .left {
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -335,9 +335,10 @@ header {
   }
   .right {
     display: flex;
-    width: 30%;
+    width: 40%;
 
     img {
+      width: 100%;
       padding-top: 78px;
     }
   }
@@ -347,7 +348,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px;
+  padding: 80px 100px;
   background-color: #ffffff;
 }
 
@@ -427,6 +428,25 @@ header {
   width: 100vw;
   background-color: #fff9f4;
   padding: 50px 0;
+}
+
+.testimonial-slide {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 10px; 
+  padding: 10px;
+  white-space: nowrap;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+
+.img-slide img {
+  height: 70vh; 
+  object-fit: cover; 
+  display: block;
 }
 
 .container {
@@ -1142,6 +1162,8 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .img-slide img {
+    height: 50vh; }
   .blog {
     padding: 40px 20px;
   }
@@ -1203,7 +1225,7 @@ footer {
 .scroll-container {
   width: 100%;
   overflow: hidden;
-  background-color: #f9e6da; /* Match the background from your image */
+  background-color: #f9e6da;
   display: flex;
   align-items: center;
   position: relative;
@@ -1211,14 +1233,25 @@ footer {
 
 .scroll-content {
   display: flex;
-  width: max-content; /* Ensure content only takes as much space as needed */
-  animation: scroll 20s linear infinite; /* Adjust duration for speed */
+  width: max-content;
+  animation: scroll 20s linear infinite;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 
 .item {
   padding: 20px 30px;
   padding-inline-start: 5px; /* Adjust spacing between items */
-  font-size: 18px; /* Font size */
+  font-size: 18px; 
   color: #6e2b11; /* Text color */
   display: flex;
   align-items: center;
@@ -1230,6 +1263,8 @@ footer {
 @media (max-width: 1024px) and (min-width: 768px) {
 }
 @media (max-width: 767px) {
+  .img-slide img {
+    height: 60vh; }
   .navbar {
     flex-wrap: wrap;
     flex-direction: row;
@@ -1507,7 +1542,7 @@ footer {
   }
 
 
-  .swiper-slide {
+  .swiper-slide { 
     padding: 2px;
     p {
       font-size: 0.6rem;
